@@ -174,7 +174,7 @@ while True:
 
 基本操作和上面类似，不过如果你还是连入串口助手进行查看数据的话，记得把串口工具的显示格式从**字符串**改为**十六进制**显示，如果连线配置等正常，你就可以在屏幕上看到`01 02 03 04`这些数据了。
 
-### 3.1.3 连续发送数据
+#### 3.1.3 连续发送数据
 
 ```python
 from machine import FPIOA, UART
@@ -345,5 +345,3 @@ except KeyboardInterrupt:
 finally:
     uart.deinit()  # 释放 UART 资源
 ```
-
-
